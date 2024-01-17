@@ -1,2 +1,1 @@
-# sales_dashboard
-Creating sales dashboard using streamlit
+![Image](data/photo.JPG)
