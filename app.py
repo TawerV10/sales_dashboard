@@ -48,7 +48,7 @@ if df_selection.empty:
 
 total_sales = int(df_selection["Total"].sum())
 average_rating = round(df_selection["Rating"].mean(), 1)
-star_rating = ":star:" * int(round(average_rating, 0))
+star_rating = ":star:" * int(round(average_rating //2, 0))
 average_sale_by_tx = round(df_selection["Total"].mean(), 2)
 
 # Showing main stats in 3 columns
