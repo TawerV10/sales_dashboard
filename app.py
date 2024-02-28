@@ -10,7 +10,9 @@ if user_token != SECRET_TOKEN:
     st.error("Unauthorized")
     st.stop()
 
-st.set_page_config(page_title="Sales Dashboard", page_icon=":bar_chart:", layout="wide")
+# st.set_page_config(page_title="Sales Dashboard", page_icon=":bar_chart:", layout="wide")
+st.set_page_config(page_title="Sales Dashboard")
+
 
 @st.cache_data
 def read_data():
