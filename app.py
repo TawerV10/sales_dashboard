@@ -2,6 +2,20 @@ import pandas as pd
 import streamlit as st
 import plotly.express as px
 
+SECRET_TOKEN = "Dfd0PosPqs"
+
+# Check if the provided token matches the secret token
+def authenticate():
+    if st.secrets["token"] != SECRET_TOKEN:
+        st.error("Unauthorized")
+        st.stop()
+
+# Get the token from the user via a text input
+user_token = st.text_input("Enter your token:", type="password")
+
+# Authenticate the user
+authenticate()
+
 st.set_page_config(page_title="Sales Dashboard", page_icon=":bar_chart:", layout="wide")
 
 @st.cache_data
