@@ -2,12 +2,12 @@ import pandas as pd
 import streamlit as st
 import plotly.express as px
 
-SECRET_TOKEN = "Dfd0PosPqs"
+# SECRET_TOKEN = "Dfd0PosPqs"
 
-user_token = st.text_input("Enter your token:", type="password")
-if user_token != SECRET_TOKEN:
-    st.error("Unauthorized")
-    st.stop()
+# user_token = st.text_input("Enter your token:", type="password")
+# if user_token != SECRET_TOKEN:
+#     st.error("Unauthorized")
+#     st.stop()
 
 # st.set_page_config(page_title="Sales Dashboard", page_icon=":bar_chart:", layout="wide")
 # st.set_page_config(page_title="Sales Dashboard")
